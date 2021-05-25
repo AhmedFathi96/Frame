@@ -1,0 +1,37 @@
+
+<app-navbar></app-navbar>
+<app-page-header [pageName]="'SAMPLE OF OUR PROJECTS'"></app-page-header>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="example-5 alternate-card" *ngFor="let proj of projects">
+        <div class="wrapper">
+          <div class="date">
+            <span class="day">{{proj.title}}</span>
+              <!-- here we can show product -->
+              <span class="day">{{proj.productName}}</span>
+
+          </div>
+
+          <div class="data">
+            <div class="content">
+              <!-- here we can show product -->
+              <span class="type">{{proj.productName}}</span>
+              <h1 class="title"><a href="#">{{proj.title}}</a></h1>
+                <ul class="menu-content">
+                  <p class="proDetails gray"><span class="project"> Consultant</span>{{proj.consultant}}</p>
+                  <p class="proDetails white"><span class="project"> Project Owner</span>{{proj.owner}}</p>
+                  <p class="proDetails gray"><span class="project"> Location</span>{{proj.location}}</p>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+

@@ -1,0 +1,21 @@
+pdf-viewer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .download {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    margin-left:80%;
+    background-color: #000051
+  }
+
+
+  .ddd{
+    filter: brightness(50%);
+  }

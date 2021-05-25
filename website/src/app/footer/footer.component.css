@@ -1,0 +1,55 @@
+@font-face {
+  font-family: latoLight;
+  src: url('../../assets/Lato/Lato-Light.ttf');
+}
+@font-face {
+  font-family: latoBold;
+  src: url('../../assets/Lato/Lato-Bold.ttf');
+}
+@font-face {
+  font-family: latoRegular;
+  src: url('../../assets/Lato/Lato-Regular.ttf');
+}
+.row{
+    margin-left: 3% ;
+    margin-right: 3%;
+}
+.navv , .logos {
+    padding-top: 1rem;
+}
+.contact{
+  padding-top:1.5rem
+}
+.navv a{
+    text-decoration:none;
+    padding-bottom: 1rem ;
+}
+.cont{
+  padding: 0.3rem;
+
+}
+a ,label,span{
+    font-size:16px
+}
+
+.yellow{
+    color: #d5ac5d;
+    font-family: latoRegular;
+}
+.logos,.navv ,.contact{
+    font-family: latoRegular;
+}
+.logos div{
+    margin-left: 7%;
+    font-size: 16px
+}
+span{
+    color:white
+}
+@media (max-width:768px) {
+.navv,.contact{
+    margin-bottom: 4%;
+}
+
+
+}

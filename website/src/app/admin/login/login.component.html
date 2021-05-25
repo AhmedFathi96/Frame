@@ -1,0 +1,39 @@
+ <app-navbar></app-navbar>
+ <div style="margin-bottom: 70px;" class="p-3">
+    <h2 class="text-center" style="color:#000051 "> Login Form </h2>
+
+    <form #myForm="ngForm" class="w-50 m-auto" (ngSubmit)="signIn(myForm.value)">
+        <div class="imgcontainer">
+        <img src="assets/imgs/user.jpg" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+        <label style="color:#000051 "><b>Username</b></label>
+        <input
+        type="text"
+        placeholder="Enter Username"
+        ngModel
+        name="name"
+        #name="ngModel"
+        class="form-control"
+        id="name"
+        required
+        >
+
+        <label style="color:#000051 "><b>Password</b></label>
+        <input
+        type="password"
+        placeholder="Enter Password"
+        ngModel
+        name="password"
+        #password="ngModel"
+        class="form-control"
+        id="Password"
+        required
+        >
+
+        <button type="submit">Login</button>
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,10 @@
+<app-navbar></app-navbar>
+<app-page-header [pageName]="'COMPANY PROFILE'"></app-page-header>
+
+<div class="container">
+
+    <a class="download btn" download href="assets/frame.pdf">Download pdf</a>
+    <pdf-viewer [src]="pdfSource"
+                [original-size]="false"
+    ></pdf-viewer>
+  </div>

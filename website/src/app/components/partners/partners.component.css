@@ -1,0 +1,30 @@
+
+@font-face {
+  font-family: latoLight;
+  src: url('../../../assets/Lato/Lato-Light.ttf');
+}
+@font-face {
+  font-family: latoBold;
+  src: url('../../../assets/Lato/Lato-Bold.ttf');
+}
+@font-face {
+  font-family: latoRegular;
+  src: url('../../../assets/Lato/Lato-Regular.ttf');
+}
+
+img{
+
+  height: 80px;
+}
+h2{
+  color:#000051;
+  font-family: latoLight;
+  font-weight: 500;
+}
+.part{
+  background-color: #e0e0e0;
+  padding: 4rem 2rem;
+}
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  padding: 0 7rem;
+}

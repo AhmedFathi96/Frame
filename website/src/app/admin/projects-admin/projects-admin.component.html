@@ -1,0 +1,37 @@
+<app-nav-admin></app-nav-admin>
+<button class="btn btn-outline-primary" type="button" style="margin-left: 80%;margin-top: 1%;" routerLink="/addProject">Add Project</button>
+
+<div>
+    <div class="text-center">
+        <h1 class=" yellow">Sample of our projects</h1>
+    </div>
+    <div>
+      <div *ngFor="let product of projects">
+      <h3 class="blue" style="margin-top: 10px ; font-size:40px ; font-family: Marcellus SC;">{{product.title}}</h3>
+      <div class="row  g-4 p-5">
+          <div class="col-lg-12 col-md-12 col-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" style="float: left !important;">
+          <ng-container *ngFor="let project of projects" >
+            <ng-container *ngIf="project.productID===product._id;">
+            <div class="card col-lg-4 col-md-6 col-12"   data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" style="float: left !important;" >
+              <ng-container *ngIf="project.avatar!= null;">
+                <img src={{project.avatar}} height="300px" class="card-img-top" alt="1">
+          </ng-container>
+            <br>
+            <div class="card-body">
+              <h3 class="card-title text-center yellow">{{project.title}}</h3>
+              <p style="text-align: center;"><span class="projec"> Consultant:</span>{{project.consultant}}</p>
+              <p style="text-align: center;"><span class="projec"> Project Owner:</span>{{project.owner}}</p>
+              <p style="text-align: center;"><span class="projec"> Location:</span>{{project.location}}</p>
+              <button type="button" class="btn btn-outline-danger" (click)="delete(project._id)" >Delete project</button>
+              </div>
+            </div>
+          </ng-container>
+      </ng-container>
+      </div>
+       </div>
+      </div>
+      </div>
+      </div>
+
+
+

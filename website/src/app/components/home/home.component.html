@@ -1,0 +1,102 @@
+<app-navbar></app-navbar>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../../../assets/imgs/slider-imgs/slider1.jpg" class="d-block w-100" alt="...">
+      <div class="animate__animated animate__zoomIn carousel-caption">
+        <h5>First slide label</h5>
+        <p>FRAME for Facade Aluminum and Glass solutions eagerly concurred the Egyptian Market, dealing with most of class-A Developers and Contractors , and hitting records in product and commitment in all deliverables aspects </p>
+
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../../../assets/imgs/slider-imgs/slider2.jpg" class="d-block w-100" alt="...">
+      <div class="animate__animated animate__zoomIn carousel-caption">
+        <h5>First slide label</h5>
+        <p>FRAME for Facade Aluminum and Glass solutions eagerly concurred the Egyptian Market, dealing with most of class-A Developers and Contractors , and hitting records in product and commitment in all deliverables aspects </p>
+
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../../../assets/imgs/slider-imgs/slider3.jpg" class="d-block w-100" alt="...">
+      <div class="animate__animated animate__zoomIn carousel-caption">
+        <h5>First slide label</h5>
+        <p>FRAME for Facade Aluminum and Glass solutions eagerly concurred the Egyptian Market, dealing with most of class-A Developers and Contractors , and hitting records in product and commitment in all deliverables aspects </p>
+
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../../../assets/imgs/slider-imgs/slider4.jpg" class="d-block w-100" alt="...">
+      <div class="animate__animated animate__zoomIn carousel-caption">
+        <h5>First slide label</h5>
+        <p>FRAME for Facade Aluminum and Glass solutions eagerly concurred the Egyptian Market, dealing with most of class-A Developers and Contractors , and hitting records in product and commitment in all deliverables aspects </p>
+
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+  <div class="wrapper">
+      <div class="container">
+        <div class="offersContainer">
+          <div class="text-center">
+            <h2>What we offer</h2>
+          </div>
+          <br>
+          <div class="row" *ngIf="products.length > 0">
+              <div  *ngFor="let pro of products" class="col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+
+                <div class="example-2 card" (click)="selectedProduct(pro.product)">
+                  <div class="wrapper"  [ngStyle]="{background: 'url(' + pro.image + ')'}">
+                    <div class="data">
+                      <div class="content">
+                        <h1 class="title"><a href="#">{{pro.product.title}}</a></h1>
+                        <p class="text">{{pro.product.description?.substring(0,99)}}...</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+          </div>
+        </div>
+
+      </div>
+      <div class="container-fluid homeAbout">
+          <div class="aboutImage">
+            <img src="../../../assets/imgs/dummy/about.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="text-center">
+              <h2>Aluminum and Glass Facade works Company | FRAME</h2>
+            <strong > Owner & CEO : Sherif Mamdouh El Saeed </strong></div><br>
+            <p class="textContent"> FRAME established 2005 , as the vision of enthusiastic civil Engineer , launching engineering firm concerned with advanced technologies in achieving customers'
+              satisfaction and fulfilling technical requirements .</p>
+            <p class="textContent">In 2010 Frame for Facade Aluminum and Glass solutions eagerly concurred the Egyptian Market ,dealing with most of class-A Developers and Contractors ,and hitting records in productivity and commitment in all deliverables aspects . </p>
+            <p class="textContent">In 2016 Frame added further manufacturing yard equivalent to 6100 m<sup>2</sup> ,to coop with the extensive customers' needs ,implementing the most advanced German technologies in cutting and assembly of the products .</p>
+            <p class="textContent">Up to 2020 had covered diversity of residential ,commercial ,industrial ,medical ,military ,recreational and touristic projects.</p>
+
+          </div>
+      </div>
+      <app-partners></app-partners>
+  </div>
+

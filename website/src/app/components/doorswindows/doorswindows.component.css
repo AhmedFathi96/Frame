@@ -1,0 +1,29 @@
+div{
+    box-sizing: border-box;
+}
+.yellow{
+
+    color: #d5ac5d !important
+}
+.blue{
+    color:#000051 ;
+    text-align: center;
+    padding-top: 20px;
+
+}
+h1{
+    font-family: Marcellus-SC ;
+    padding:3%
+}
+div{
+    word-wrap: break-word;
+}
+.projec{
+    color: rgb(120, 120, 221) !important;
+    font-family: Marcellus SC ;
+    font-size :20px;
+    text-align: center;
+}
+.card{
+    border:0px !important
+}

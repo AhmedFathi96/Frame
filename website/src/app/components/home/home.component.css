@@ -1,0 +1,234 @@
+@font-face {
+  font-family: latoLight;
+  src: url('../../../assets/Lato/Lato-Light.ttf');
+}
+@font-face {
+  font-family: latoBold;
+  src: url('../../../assets/Lato/Lato-Bold.ttf');
+}
+@font-face {
+  font-family: latoRegular;
+  src: url('../../../assets/Lato/Lato-Regular.ttf');
+}
+div{
+    box-sizing: border-box;
+
+}
+.wrapper{
+  background-color:#f5f5f5;
+}
+
+.carousel-item h5{
+    font-family: latoBold;
+    color:#ffffff;
+    font-size: 22px;
+}
+.carousel-item p{
+  font-family: latoRegular;
+  color:#d3d1d1;
+  font-size: 18px;
+}
+img{
+    filter: brightness(50%);
+}
+.view {
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 32%;
+    height:35px !important;
+    margin-left:35%;
+    background-color: #dabe8b;
+  }
+.homeAbout{
+    background-color: #FAFBFC;
+    color:#707070;
+    width:100%;
+    display: flex;
+    align-items: center;
+}
+.aboutImage{
+  flex: 0.65;
+}
+.content{
+  flex: 1;
+}
+.homeAbout{
+  padding: 2rem;
+}
+h2{
+    font-family: latoBold;
+    color:#000051;
+}
+.textContent{
+  font-family: latoRegular;
+  font-size: 16px;
+  line-height: 23px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+.blue{
+    color:#000051;
+}
+
+/* imgs product  */
+.containers {
+    position: relative;
+    text-align: center;
+    color:white;
+  }
+
+  .centered {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.slide{
+  position: relative;
+  height: 100vh;
+}
+.carousel-item , .carousel-item img{
+  height: 100vh;
+}
+
+
+
+
+.container {
+  margin: auto;
+  width: 100%;
+  padding: 3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+.offersContainer{
+  padding: 4rem 0;
+}
+.row {
+  margin: auto 0;
+}
+
+.card {
+  float: left;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  width: 100%;
+  border: 0 !important;
+  border-radius: 8px;
+  background: #f5f5f5 !important;
+  /* box-shadow:  25px 25px 50px #c9c9c9, -25px -25px 50px #ffffff; */
+}
+.card .menu-content {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.card .menu-content::before, .card .menu-content::after {
+  content: "";
+  display: table;
+}
+.card .menu-content::after {
+  clear: both;
+}
+.card .menu-content li {
+  display: inline-block;
+}
+.card .menu-content a {
+  color: #fff;
+}
+.card .wrapper {
+  background-color: #fff;
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+  /* border: 1px solid #f0f0f0; */
+
+  /* box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2); */
+}
+.card .wrapper:hover .data {
+  transform: translateY(0);
+}
+.card .data {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(calc(80px + 1em));
+  transition: transform 0.3s;
+}
+.card .data .content {
+  padding: 1.1rem;
+  position: relative;
+  z-index: 1;
+}
+.card .type {
+  font-size: 12px;
+}
+.card .title {
+  margin-top: 0px;
+}
+.card .text {
+  height: 70px;
+  margin: 0;
+}
+.card input[type=checkbox] {
+  display: none;
+}
+.card input[type=checkbox]:checked + .menu-content {
+  transform: translateY(-60px);
+}
+
+
+
+.example-2 .wrapper {
+  /* background: url(https://images.unsplash.com/photo-1547405358-4ef2671bb1bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80) 30% 1% cover no-repeat; */
+}
+.example-2 .date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 0.7em 2.5em 1.5rem 0.7em;
+  border-radius: 0 0 90% 0;
+}
+.example-2 .date span {
+  display: block;
+  text-align: center;
+}
+.example-2 .date .day {
+  font-weight: 700;
+  font-size: 24px;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
+}
+.example-2 .date .month {
+  text-transform: uppercase;
+}
+.example-2 .date .month,
+.example-2 .date .year {
+  font-size: 10px;
+}
+.example-2 .content {
+  background-color: #fff;
+  box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+}
+.example-2 .title a {
+  color: #000051;
+}
+.title a{
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  font-family: latoBold;
+}
+.text{
+  font-family: latoRegular;
+  font-size: 15px !important;
+}

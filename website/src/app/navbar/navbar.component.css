@@ -1,0 +1,34 @@
+@font-face {
+  font-family: latoLight;
+  src: url('../../assets/Lato/Lato-Light.ttf');
+}
+@font-face {
+  font-family: latoBold;
+  src: url('../../assets/Lato/Lato-Bold.ttf');
+}
+@font-face {
+  font-family: latoRegular;
+  src: url('../../assets/Lato/Lato-Regular.ttf');
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-family: latoRegular !important;
+  color: #fff;
+}
+.navbar{
+  position: fixed;
+  z-index: 66666;
+  top: 0;
+  width: 100%;
+
+}
+.transparentBack{
+  background-color: transparent !important;
+  transition: all 0.5s;
+  width: 100%;
+}
+.whiteBack{
+  background-color: #000051 !important;
+  transition: all 0.5s;
+  width: 100%;
+}
