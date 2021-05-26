@@ -54,11 +54,10 @@ router.post('/add-project',  upload.single('img') ,async(req,res)=>{
 })
 
 
-router.get('/project/:project_id/image/:id/view' , async(req,res)=>{
+router.get('/project/image/:id/view' , async(req,res)=>{
     try{
-        const project_id = req.params.project_id;
         const id = req.params.id;
-        const data = await Task.find({project: project_id , _id:id});
+        const data = await Task.find({_id:id});
         res.set('Content-type' , 'image/jpg');
         res.send(data[0].img);
     }catch(e){
