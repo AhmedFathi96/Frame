@@ -12,10 +12,6 @@ import { AddImgComponent } from './admin/add-img/add-img.component';
 import { CompanyProfileComponent } from './components/company-profile/company-profile.component';
 import { AddProductComponent } from './admin/add-product/add-product.component';
 import { ProductAdminComponent } from './admin/product-admin/product-admin.component';
-import { CurtainwallsComponent } from './components/curtainwalls/curtainwalls.component';
-import { DoorswindowsComponent } from './components/doorswindows/doorswindows.component';
-import { CladdingComponent } from './components/cladding/cladding.component';
-import { LouverComponent } from './components/louver/louver.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 const routes: Routes = [

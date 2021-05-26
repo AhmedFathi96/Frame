@@ -26,12 +26,10 @@ import { AddProductComponent } from './admin/add-product/add-product.component';
 import { ProductAdminComponent } from './admin/product-admin/product-admin.component';
 import { NavAdminComponent } from './admin/nav-admin/nav-admin.component';
 import {SlickCarouselModule } from 'ngx-slick-carousel';
-import { DoorswindowsComponent } from './components/doorswindows/doorswindows.component';
-import { CurtainwallsComponent } from './components/curtainwalls/curtainwalls.component';
-import { LouverComponent } from './components/louver/louver.component';
-import { CladdingComponent } from './components/cladding/cladding.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { PageHeaderComponent } from './components/page-header/page-header.component';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { SingleProductComponent } from './components/products/single-product/single-product.component';
 
 @NgModule({
   declarations: [
@@ -52,13 +50,10 @@ import { PageHeaderComponent } from './components/page-header/page-header.compon
     AddProductComponent,
     NavAdminComponent,
     ProductAdminComponent,
-    DoorswindowsComponent,
-    CurtainwallsComponent,
-    LouverComponent,
-    CladdingComponent,
     ProductDetailsComponent,
-    PageHeaderComponent
-    
+    PageHeaderComponent,
+    SingleProductComponent
+
   ],
   imports: [
     BrowserModule,
@@ -69,7 +64,7 @@ import { PageHeaderComponent } from './components/page-header/page-header.compon
     FormsModule,
     PdfViewerModule,
     SlickCarouselModule,
-  
+    IvyCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DoorswindowsComponent } from './doorswindows.component';
+import { SingleProductComponent } from './single-product.component';
 
-describe('DoorswindowsComponent', () => {
-  let component: DoorswindowsComponent;
-  let fixture: ComponentFixture<DoorswindowsComponent>;
+describe('SingleProductComponent', () => {
+  let component: SingleProductComponent;
+  let fixture: ComponentFixture<SingleProductComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DoorswindowsComponent ]
+      declarations: [ SingleProductComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DoorswindowsComponent);
+    fixture = TestBed.createComponent(SingleProductComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
