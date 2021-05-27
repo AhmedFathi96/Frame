@@ -10,9 +10,12 @@
   font-family: latoRegular;
   src: url('../../assets/Lato/Lato-Regular.ttf');
 }
-
+@font-face {
+  font-family: open-sansRegular ;
+  src: url(../../assets/Open_Sans/OpenSans-Bold.ttf);
+}
 .navbar-dark .navbar-nav .nav-link {
-  font-family: latoRegular !important;
+  font-family: open-sansRegular !important;
   color: #fff;
 }
 .navbar{
@@ -20,7 +23,9 @@
   z-index: 66666;
   top: 0;
   width: 100%;
-
+}
+.nav-item{
+  margin-right:  12px;
 }
 .transparentBack{
   background-color: transparent !important;

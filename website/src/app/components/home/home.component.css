@@ -10,6 +10,10 @@
   font-family: latoRegular;
   src: url('../../../assets/Lato/Lato-Regular.ttf');
 }
+@font-face {
+  font-family: open-sansRegular ;
+  src: url('../../../assets/Open_Sans/OpenSans-Bold.ttf');
+}
 div{
     box-sizing: border-box;
 
@@ -17,20 +21,27 @@ div{
 .wrapper{
   background-color:#f5f5f5;
 }
-
 .carousel-item h5{
     font-family: latoBold;
     color:#ffffff;
     font-size: 22px;
 }
-.carousel-item p{
-  font-family: latoRegular;
+.carousel-item h1{
+  font-family: latoLight;
   color:#d3d1d1;
-  font-size: 18px;
+  font-size: 50px;
 }
-img{
-    filter: brightness(50%);
+
+.carousel-item p{
+  font-family: latoBold;
+  color:#d3d1d1;
+  font-size: 20px;
 }
+.carousel-item img{
+    filter: brightness(45%);
+    width: 100%;
+}
+
 .view {
     color: white;
     border: none;
@@ -87,12 +98,29 @@ h2{
   }
 .slide{
   position: relative;
-  height: 100vh;
+  height: 94vh;
 }
 .carousel-item , .carousel-item img{
-  height: 100vh;
+  height: 94vh;
 }
 
+
+@media only screen and (max-width: 528px){
+  .carousel-item h1{
+    font-size: 36px;
+  }
+  .carousel-item p{
+    font-size: 18px;
+  }
+  .slide{
+    position: relative;
+    height: 60vh;
+  }
+  .carousel-item , .carousel-item img{
+    position: relative;
+    height: 60vh;
+  }
+}
 
 
 
@@ -232,3 +260,4 @@ h1 {
   font-family: latoRegular;
   font-size: 15px !important;
 }
+
