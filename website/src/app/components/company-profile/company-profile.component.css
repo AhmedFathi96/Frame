@@ -7,11 +7,10 @@ pdf-viewer {
   .download {
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 8px auto !important;
     border: none;
     cursor: pointer;
     width: 150px;
-    margin-left:80%;
     background-color: #000051
   }
 

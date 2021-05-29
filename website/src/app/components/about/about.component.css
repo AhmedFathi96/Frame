@@ -45,6 +45,16 @@
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 712px) {
+ .homeAbout{
+    background-color: #FAFBFC;
+    color:#707070;
+    width:100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column
+  }
+}
 .white{
   background-color:#ffffff;
   color:#707070;
@@ -77,3 +87,7 @@ overflow-wrap: break-word;
 hyphens: auto;
 }
 
+.image{
+  width:100%;
+  margin-top:0.5rem
+}

@@ -16,6 +16,7 @@
   /* width: 50%; */
   padding: 4rem 1rem;
 }
+
 .flexLeft{
   flex-direction: row;
   background-color: #f8f8f8
@@ -24,8 +25,13 @@
   background-color: #fff;
   flex-direction: row-reverse;
 }
+@media only screen and (max-width: 712px) {
+ .flexLeft, .flexRight, .productWrapper{
+    flex-direction:column;
+  }
+}
 .img{
-  width: 600px;
+  width: 100%;
   height: 500px;
 }
 .contentWrapper{
