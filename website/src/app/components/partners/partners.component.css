@@ -14,7 +14,11 @@
 
 img{
 
-  height: 80px;
+  height: 260px;
+}
+h2{
+  font-family: latoBold;
+  color:#000051;
 }
 h2{
   color:#000051;
@@ -22,9 +26,14 @@ h2{
   font-weight: 500;
 }
 .part{
-  background-color: #e0e0e0;
+  background-color: #fff;
   padding: 4rem 2rem;
 }
 .carousel-item-next, .carousel-item-prev, .carousel-item.active {
   padding: 0 7rem;
+}
+
+.carousel-inner{
+  height: 22em;
+  background-color: #fff;
 }

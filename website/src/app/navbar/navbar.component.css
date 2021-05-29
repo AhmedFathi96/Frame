@@ -11,11 +11,19 @@
   src: url('../../assets/Lato/Lato-Regular.ttf');
 }
 @font-face {
-  font-family: open-sansRegular ;
+  font-family: open-sansBold ;
   src: url(../../assets/Open_Sans/OpenSans-Bold.ttf);
 }
+@font-face {
+  font-family: open-sansRegular ;
+  src: url(../../assets/Open_Sans/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: open-sansSemibold ;
+  src: url(../../assets/Open_Sans/OpenSans-SemiBold.ttf);
+}
 .navbar-dark .navbar-nav .nav-link {
-  font-family: open-sansRegular !important;
+  font-family: open-sansSemibold !important;
   color: #fff;
 }
 .navbar{
@@ -23,6 +31,12 @@
   z-index: 66666;
   top: 0;
   width: 100%;
+  height: 8em;
+}
+.nav-link{
+  font-family:open-sansSemibold !important ;
+  font-size: large;
+  color:#fff
 }
 .nav-item{
   margin-right:  12px;
@@ -39,4 +53,14 @@
 }
 
 
-    
+.brand-logo{
+  position: absolute;
+  left: 15px;
+  top: 5px;
+}
+
+.navbar-toggler{
+  position: absolute;
+  right:15px;
+  top: 10px;
+}

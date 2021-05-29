@@ -2,7 +2,7 @@
 
 
 
- <div id="myCarousel" class="carousel slide " data-bs-ride="carousel">
+ <div id="myCarousel" class="carousel slide carousel-fade " data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
       aria-label="Slide 1"></button>
@@ -97,7 +97,7 @@
 
 
   <div class="wrapper">
-      <div class="container">
+      <div class="container-fluid">
         <div class="offersContainer">
           <div class="text-center">
             <h2>What we offer</h2>
@@ -106,7 +106,7 @@
           <div class="row" *ngIf="products.length > 0">
               <div  *ngFor="let pro of products" class="col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
 
-                <div class="example-2 card" (click)="selectedProduct(pro.product)">
+                <div class="example-2 card full-width" (click)="selectedProduct(pro.product)">
                   <div class="wrapper"  [ngStyle]="{background: 'url(' + pro.image + ')'}">
                     <div class="data">
                       <div class="content">
@@ -123,9 +123,15 @@
         </div>
 
       </div>
+      <br>
+
+      <div class="text-center">
+        <h1>Who We Are</h1>
+      </div>
+      <br>
       <div class="container-fluid homeAbout">
           <div class="aboutImage">
-            <img src="../../../assets/imgs/dummy/about.jpg" class="image" alt="" />
+            <img src="../../../assets/imgs/about1.jpg" class="image" alt="" />
           </div>
           <div class="content">
             <div class="text-center">
@@ -139,6 +145,8 @@
 
           </div>
       </div>
-      <app-partners></app-partners>
   </div>
+
+
+  <app-partners></app-partners>
 
