@@ -4,8 +4,8 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-lg-4">
-      <div class="example-5 alternate-card" *ngFor="let proj of projects">
+    <div class="col-lg-4" *ngFor="let proj of projects">
+      <div class="example-5 alternate-card">
         <div class="wrapper" [ngStyle]="{background: 'url(' + 'http://localhost:6100/api/project/project/image/'+proj._id+'/view' + ')'}">
           <div class="date">
             <span class="day">{{proj.title}}</span>
