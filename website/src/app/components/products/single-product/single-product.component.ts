@@ -16,7 +16,6 @@ export class SingleProductComponent implements OnInit {
 
   ngOnInit(): void {
     this.projectsService.getProductImages(this.product._id).subscribe((res:any) =>{
-      console.log("===============>",res.data)
       this.mainImageSrc = `http://localhost:6100/api/productImages/product/${this.product._id}/image/${res.data[0]}/view`
       res.data.forEach( (img:string,index:number) =>{
         if(index !== 0){

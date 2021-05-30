@@ -8,7 +8,7 @@
     <div class="contentWrapper">
         <h2 class="header">{{product.title}}</h2>
         <span class="content">{{product.description}}</span>
-        <h2 class="subHeader">Systems</h2>
+        <h2 class="subHeader" *ngIf="images.length > 0">Systems</h2>
         <carousel *ngIf="images.length > 0" class="slider" [images]="images"></carousel>
     </div>
   </div>

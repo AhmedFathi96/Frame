@@ -15,6 +15,7 @@ export class ProductAdminComponent implements OnInit {
   //constructor() { }
   products:Product[]=[]
   selectedProduct:Product= {};
+  selectedProductImages:{id:string, path:string}[]= [];
 
   constructor(private projectsService:ProjectsService) { }
   getProducts(){
@@ -74,6 +75,19 @@ export class ProductAdminComponent implements OnInit {
   deleteProduct(id:string){
     this.projectsService.deleteProduct(id).subscribe((res)=>{
       this.products = this.products.filter(item => item._id !== res)
+    });
+  }
+  viewProduct(id:string){
+    this.selectedProductImages = [];
+    this.projectsService.getProductImages(id).subscribe((res:any)=>{
+      res.data.forEach((element:string) => {
+        this.selectedProductImages.push({id:element , path: `http://localhost:6100/api/productImages/get-productImages-image/${element}/view`})
+      });
+    });
+  }
+  deleteProductImage(id:string){
+    this.projectsService.deleteProductImages(id).subscribe((res)=>{
+      this.selectedProductImages = this.selectedProductImages.filter(item => item.id !== id)
     });
   }
 

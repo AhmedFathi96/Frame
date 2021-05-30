@@ -62,5 +62,8 @@ export class ProjectsService {
   deleteProduct(id:string){
     return this.http.delete(this.baseUrl + 'products/' +id)
   }
+  deleteProductImages(id:string){
+    return this.http.delete(this.baseUrl + 'api/productImages/delete-productImages/' +id)
+  }
   //update project
 }
