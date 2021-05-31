@@ -20,9 +20,9 @@ export class LoginComponent implements OnInit {
 
   signIn(user:any){
     this.userService.login(user).subscribe((res)=>{
-      this.user = res ;
+      this.user = res;
       /// mafesh token in interface user
-      this.token =this.user.token
+      this.token =this.user.data.token
       localStorage.setItem('token',this.token)
       this.router.navigate(['/projectsAdmin'])
 

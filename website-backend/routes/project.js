@@ -57,7 +57,7 @@ router.post('/add-project',  upload.single('img') ,async(req,res)=>{
 router.get('/project/image/:id/view' , async(req,res)=>{
     try{
         const id = req.params.id;
-        const data = await Task.find({_id:id});
+        const data = await Task.find({_id:id}, {"img": 0});
         res.set('Content-type' , 'image/jpg');
         res.send(data[0].img);
     }catch(e){
@@ -74,7 +74,7 @@ router.get('/project/image/:id/view' , async(req,res)=>{
 ////////////////////////////////////////////////////////////////////////////
 router.get('/projects',async(req,res)=>{
     try{
-        const tasks = await Task.find({img: 0})
+        const tasks = await Task.find({}, {"img": 0})
         res.send(tasks)
     }catch(e){
         res.status(500).send(e)
@@ -87,7 +87,7 @@ router.get('/projects/:id',async(req,res)=>{
     const _id = req.params.id
     try{
         // const task = await Task.findById(_id)
-        const task = await Task.findOne({_id}, {img: 0})
+        const task = await Task.findOne({_id}, {"img": 0})
         if(!task){
             return res.status(400).send()
         }

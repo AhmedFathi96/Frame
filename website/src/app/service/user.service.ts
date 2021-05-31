@@ -11,7 +11,7 @@ export class UserService {
   constructor(private http: HttpClient) { }
 
   login(userdata : any){
-    return this.http.post(this.baseUrl+'/api/login',userdata)
+    return this.http.post(this.baseUrl+'api/login',userdata)
   }
 
   getToken(){
