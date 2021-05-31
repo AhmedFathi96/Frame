@@ -87,10 +87,14 @@ div{
 h2{
     font-family: latoBold;
     color:#000051;
+    font-size: x-large;
+}
+strong{
+  font-size: 14px;
 }
 .textContent{
   font-family: latoRegular;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 23px;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -222,7 +226,7 @@ h1 {
   font-size: 12px;
 }
 .card .title {
-  margin-top: 0px;
+  margin-bottom: 20px;
 }
 .card .text {
   height: 70px;

@@ -19,21 +19,17 @@ img{
 h2{
   font-family: latoBold;
   color:#000051;
-}
-h2{
-  color:#000051;
-  font-family: latoLight;
-  font-weight: 500;
+  font-size: x-large;
 }
 .part{
   background-color: #fff;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
 }
 .carousel-item-next, .carousel-item-prev, .carousel-item.active {
   padding: 0 7rem;
 }
 
 .carousel-inner{
-  height: 22em;
+  height: 23em;
   background-color: #fff;
 }

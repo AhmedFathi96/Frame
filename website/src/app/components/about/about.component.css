@@ -12,6 +12,10 @@
   src: url('../../../assets/Lato/Lato-Regular.ttf');
 }
 
+h1{
+  color: #FAFBFC;
+  font-family: latoRegular;
+}
 .yellow{
   color: #000051;
   font-family: latoLight;
@@ -64,7 +68,7 @@
   color:#707070;
 }
 .aboutImage{
-  flex: 0.65;
+  flex: 0.95;
 }
 .content{
   flex: 1;
@@ -80,14 +84,45 @@
 }
 .textContent{
 font-family: latoRegular;
-font-size: 16px;
+font-size: 18px;
+text-align: justify;
+text-justify: inter-word;
 line-height: 23px;
 word-wrap: break-word;
 overflow-wrap: break-word;
 hyphens: auto;
+padding: 0 30px 0 30px;
 }
 
 .image{
   width:100%;
   margin-top:0.5rem
+}
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide-left{  
+  /* This section calls the slideInFromLeft animation we defined above */
+  
+  animation: 1.2s ease-out 0s 1 slideInFromLeft;
+}
+.slide-right{
+
+  animation: 1.2s ease-out 0s 1 slideInFromRight;
 }

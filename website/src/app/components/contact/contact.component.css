@@ -24,11 +24,13 @@
   margin-top: 5rem;
 }
 .yellow{
-    color: #d5ac5d;
+  font-size: 18px;
+    color: #000051;
     margin-top: 3%;
     text-align: center;
-    font-family: latoRegular;
+    font-family: latolight;
 }
+
 .blue{
     color:#000051 ;
 }
@@ -44,7 +46,7 @@ agm-map {
 }
 span{
   font-family: latoRegular;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 img{

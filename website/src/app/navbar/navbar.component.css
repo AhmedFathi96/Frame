@@ -42,7 +42,9 @@
   margin-right:  12px;
 }
 .transparentBack{
-  background-color: transparent !important;
+  /* background-color: transparent !important; */
+
+  background-color: #000051 !important;
   transition: all 0.5s;
   width: 100%;
 }
@@ -51,7 +53,15 @@
   transition: all 0.5s;
   width: 100%;
 }
+.whiteBack a{
+  color: #000051;
+}
 
+.dropdown-item{
+  font-family:open-sansSemibold !important ;
+  font-size: large;
+  color:#000051;
+}
 
 .brand-logo{
   position: absolute;
@@ -64,3 +74,4 @@
   right:15px;
   top: 10px;
 }
+
