@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
     this.projectsService.getProducts().subscribe((res)=>{
       res.forEach(item =>{
         this.projectsService.getProductImages(item._id).subscribe((img:any)=>{
-          this.products.push({product:item,image:`http://localhost:6100/api/productImages/product/${item._id}/image/${img.data[0]}/view`})
+          this.products.push({product:item,image:`http://18.223.164.22/api/productImages/product/${item._id}/image/${img.data[0]}/view`})
         })
 
       })

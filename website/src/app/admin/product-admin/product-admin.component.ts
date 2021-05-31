@@ -81,7 +81,7 @@ export class ProductAdminComponent implements OnInit {
     this.selectedProductImages = [];
     this.projectsService.getProductImages(id).subscribe((res:any)=>{
       res.data.forEach((element:string) => {
-        this.selectedProductImages.push({id:element , path: `http://localhost:6100/api/productImages/get-productImages-image/${element}/view`})
+        this.selectedProductImages.push({id:element , path: `http://18.223.164.22/api/productImages/get-productImages-image/${element}/view`})
       });
     });
   }

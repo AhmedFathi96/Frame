@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class UserService {
 
-  baseUrl="http://localhost:6100"
+  baseUrl="http://18.223.164.22/"
 
   constructor(private http: HttpClient) { }
 

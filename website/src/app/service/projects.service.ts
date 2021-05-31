@@ -9,7 +9,7 @@ import { Project } from '../interfaces/project';
 })
 export class ProjectsService {
 
-  baseUrl="http://localhost:6100/"
+  baseUrl="http://18.223.164.22/"
 
   constructor( private http: HttpClient) { }
   getProjects(){
