@@ -2,7 +2,7 @@
 
 
 
- <div id="myCarousel" class="carousel slide carousel-fade " data-bs-ride="carousel">
+ <div id="myCarousel" class="carousel slide carousel-fade " data-bs-interval="3000" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
       aria-label="Slide 1"></button>
@@ -124,7 +124,22 @@
 
       </div>
       <br>
+      0
 
+ <script language="javascript" type="text/javascript">
+ $(window).load(function() 
+ {       
+     $("#slideshow > div:gt(0)").hide();
+     setInterval(function() { 
+       $('#slideshow > div:first')
+       .fadeOut(75)
+       .next()
+       .fadeIn(100)
+       .end()
+       .appendTo('#slideshow');
+                            },  1100);
+  });
+</script>
       <div class="text-center">
         <h2>Who We Are</h2>
       </div>
