@@ -73,5 +73,23 @@
   position: absolute;
   right:15px;
   top: 10px;
+  height: 4em;
+  width: 4em;
+}
+.navbar-toggler-icon{
+  font-size: large;
 }
 
+
+@media only screen and (max-width: 712px) {
+  .nav-link{
+     background-color: #fff;
+     color: #000051 !important;
+     padding-left: 2em;
+
+  border-bottom-color: #66666611;
+  border-bottom-style: solid;
+  border-bottom-width: 0.01rem;
+    
+   }
+ }
