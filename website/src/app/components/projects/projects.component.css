@@ -16,7 +16,7 @@ div{
 }
 .wrapper{
   background-color:#f5f5f5;
-  background-position: center;
+  background-position: center !important;
   background-size: cover !important;
   margin-bottom: 4em;
 }

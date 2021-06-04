@@ -36,11 +36,11 @@
 }
 .header-img{
 
-  background-image: linear-gradient(rgba(0,0,10,0.7), rgba(0,0,0,0.3), rgba(0,0,0,0.48)) ,url('../../../assets/imgs/header.jpg');
-  height: 50em;
+  background-image: linear-gradient(rgba(0,0,10,0.7), rgba(0,0,0,0.3), rgba(0,0,0,0.48)) ,url('../../../assets/imgs/header2.jpg');
+  height: 70em;
   /* margin-top: 80px; */
-  background-size: cover;
-  background-position: center;
+  background-size: cover !important;
+  background-position:center !important;
 }
 .inner-header {
   height:65vh;
@@ -75,7 +75,9 @@
 
 @media only screen and (max-width: 728px){
 .header-img{
-  height: 40em;
+  height: 36em;
+  background-position: center;
+  background-size: ;
 }
 .head{
   font-size: x-large;
