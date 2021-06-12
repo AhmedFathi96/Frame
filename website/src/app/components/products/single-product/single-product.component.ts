@@ -16,10 +16,10 @@ export class SingleProductComponent implements OnInit {
 
   ngOnInit(): void {
     this.projectsService.getProductImages(this.product._id).subscribe((res:any) =>{
-      this.mainImageSrc = `http://18.223.164.22/api/productImages/product/${this.product._id}/image/${res.data[0]}/view`
+      this.mainImageSrc = `http://localhost:6100/api/productImages/product/${this.product._id}/image/${res.data[0]}/view`
       res.data.forEach( (img:string,index:number) =>{
         if(index !== 0){
-          this.images.push({path:`http://18.223.164.22/api/productImages/product/${this.product._id}/image/${img}/view`})
+          this.images.push({path:`http://localhost:6100/api/productImages/product/${this.product._id}/image/${img}/view`})
         }
       })
     })
