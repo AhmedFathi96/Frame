@@ -57,7 +57,7 @@ router.post('/add-project',  upload.single('img') ,async(req,res)=>{
 router.get('/project/image/:id/view' , async(req,res)=>{
     try{
         const id = req.params.id;
-        const data = await Task.find({_id:id}, {"img": 0});
+        const data = await Task.find({_id:id});
         res.set('Content-type' , 'image/jpg');
         res.send(data[0].img);
     }catch(e){
